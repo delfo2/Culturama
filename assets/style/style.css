@@ -262,7 +262,8 @@ img:hover {
 }
 
 .eventos__botao button,
-.agenda__botao button {
+.agenda__botao button,
+.agenda__botao {
     outline: none;
     border: none;
     background-color: black;
@@ -271,6 +272,7 @@ img:hover {
     width: 148px;
     cursor: pointer;
     transition: .5s;
+    margin: 1rem 0;
 }
 
 /*Agenda*/

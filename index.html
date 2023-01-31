@@ -12,6 +12,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./assets/img/Favicon2.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/flex.css">
+    <link rel="stylesheet" href="./assets/style/grid.css">
 </head>
 
 <body>
@@ -126,22 +128,25 @@
                     <h5>São Paulo | SP</h5>
                     <button>Ver</button>
                 </li>
-                <li class="eventos__botao"><button>Ver mais</button></li>
             </ul>
+            <button class="agenda__botao">Ver mais</button>
         </section>
         <section class="agenda">
             <h2 class="agenda__titulo">Coloque na sua agenda!</h2>
             <ul class="agenda__lista">
                 <li class="agenda__item">
                     <img src="./assets/img/agenda-1.png" alt="Sala de cinema">
-                    <div class="agenda__informacoes">
-                        <h3>agosto</h3>
-                        <h4>08 (sexta)</h4>
-                        <h5>20:30</h5>
-                    </div>
-                    <div class="agenda__atracao">
-                        <h6>Quinta 3D</h6>
-                        <button>Avise-me</button>
+
+                    <div class="agenda__divisao">
+                        <div class="agenda__informacoes">
+                            <h3>agosto</h3>
+                            <h4>08 (sexta)</h4>
+                            <h5>20:30</h5>
+                        </div>
+                        <div class="agenda__atracao">
+                            <h6>Quinta 3D</h6>
+                            <button>Avise-me</button>
+                        </div>
                     </div>
                 </li>
                 <li class="agenda__item">
@@ -204,8 +209,8 @@
                         <button>Avise-me</button>
                     </div>
                 </li>
-                <li class="agenda__botao"><button>Ver mais</button></li>
             </ul>
+            <button class="agenda__botao">Ver mais</button>
         </section>
     </main>
     <footer class="rodape">

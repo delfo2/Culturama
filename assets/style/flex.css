@@ -1,0 +1,127 @@
+.menu {
+    align-items: center;
+    column-gap: 33px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* categorias */
+
+.categorias__lista {
+    display: flex;
+    flex-direction: column;
+    row-gap: .75rem;
+}
+
+/* destaques */
+.destaques {
+    align-items: center;
+    column-gap: 10px;
+    display: flex;
+}
+.destaques__barra {
+    flex-grow: 1;
+}
+
+/* eventos proximos */
+.eventos__lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+.eventos__item {
+    flex-grow: 1;
+    max-width: 400px;
+}
+
+/* agenda */
+.agenda__lista {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.agenda__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.agenda__divisao {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.agenda__informacoes {
+    width: 50%;
+}
+.agenda__atracao {
+    width: 50%;
+}
+
+/* rodape */
+
+.rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.rodape__logo {
+    align-self: end;
+}
+
+
+@media screen and (min-width: 720px) {
+    .menu {
+        column-gap: 90px;
+    }
+        
+    /* categorias */
+
+    .categorias__lista {
+        column-gap: 1rem;
+        flex-wrap: wrap;
+    }
+    
+    /* eventos proximos */
+    .eventos__lista {
+        justify-content: flex-end;
+    }
+
+    /* agenda */
+    .agenda__lista {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+    }
+    .agenda__item {
+        flex-grow: 1;
+    }
+}
+
+@media (min-width: 1400px) {
+    .menu {
+        column-gap: 150px;
+        flex-wrap: nowrap;
+    }
+    .menu__item:nth-child(1) {
+        order: 1;
+    }
+    .menu__item:nth-child(2) {
+        order: 3;
+    }
+    .menu__item:nth-child(3) {
+        order: 4;
+    }
+    .menu__item:nth-child(4) {
+        order: 5;
+    }
+    .menu__item:nth-child(5) {
+        order: 2;
+    }
+    .agenda__item {
+        flex-grow: 1;
+        width: 30%;
+    }
+}
